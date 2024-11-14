@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\masca\source\repos\PracticaFinalTrue\PracticaFinalTrue\App.xaml
-11407045341
+3326748247
 
-62132236051
+8851462451
 1981124507420
-MainWindow.xaml;
+MailEnviado.xaml;MainWindow.xaml;RecContra.xaml;
 
-True
+False
 

@@ -5,21 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticaFinalTrue"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize">
 
     <Window.Resources>
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Consolas"/>
             <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="11"></Setter>
         </Style>
 
         <Style TargetType="Button">
             <Setter Property="FontFamily" Value="Consolas"/>
-            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontSize" Value="11"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style>
+
+
 
         <Style TargetType="TabControl">
             <Setter Property="Background" Value="Transparent"/>
@@ -29,50 +35,161 @@
         </Style>
 
         <Style TargetType="TabItem">
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="Padding" Value="10,5"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}" Padding="10,2,10,0">
+                            <StackPanel>
+                                <ContentPresenter ContentSource="Header" HorizontalAlignment="Center"/>
+                                <Border x:Name="BottomBorder" Height="3" Background="Transparent" VerticalAlignment="Bottom"/>
+                            </StackPanel>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="BottomBorder" Property="Background" Value="Black"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="BottomBorder" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
+
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="FontFamily" Value="Consolas"></Setter>
+            <Setter Property="FontSize" Value="11"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Background" Value="Black"></Setter>
+
+
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="FontFamily" Value="Consolas"></Setter>
+            <Setter Property="FontSize" Value="11"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Margin" Value="1"></Setter>
+        </Style>
+
+        <Style TargetType="CheckBox">
+            <Setter Property="FontFamily" Value="Consolas"></Setter>
+            <Setter Property="FontSize" Value="11"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Margin" Value="1"></Setter>
+        </Style>
+
     </Window.Resources>
 
-    <Grid Background="#FF4B3A">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Border CornerRadius="20" Background="#FF4B3A" Padding="10">
+        <Grid Background="#FF4B3A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-        <Label FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="25,0,0,0">Bienvenidos</Label>
-        <Image Source="Group 4.png" Grid.Row="1" HorizontalAlignment="Left"/>
+            <Label FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="25,0,0,0">Bienvenidos</Label>
+            <Image Source="Group 4.png" Grid.Row="1" HorizontalAlignment="Left"/>
 
-        <Canvas Grid.Column="1" VerticalAlignment="Center" Margin="150,0,0,0">
-            <TabControl HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TabItem Header="Login">
-                    <StackPanel HorizontalAlignment="Left">
-                        <Label FontSize="12">Email</Label>
-                        <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12"/>
-                        <Label FontSize="12">Password</Label>
-                        <PasswordBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" PasswordChar="*" FontSize="12"/>
-                        <Button Content="Recuperar contraseña" Margin="5"/>
-                        <Button Content="Login" Width="140" Height="35" Foreground="#FF4B3A">
-                            <Button.Template>
-                                <ControlTemplate TargetType="Button">
-                                    <Border Background="White" BorderThickness="1" CornerRadius="15">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Button.Template>
-                        </Button>
-                    </StackPanel>
-                </TabItem>
+            <Canvas Grid.Column="1" VerticalAlignment="Center" Margin="140,0,0,50">
+                <TabControl HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TabItem Header="Login">
+                        <StackPanel HorizontalAlignment="Left">
+                            <Label FontSize="12">Email</Label>
+                            <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12"/>
+                            <Label FontSize="12">Password</Label>
+                            <PasswordBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" PasswordChar="*" FontSize="12"/>
+                            <Button x:Name="contraseñaBtn" Content="Recuperar contraseña" Margin="5" Click="Contra_Click"/>
+                            <Button Content="Login" Width="140" Height="35" Foreground="#FF4B3A">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="White" BorderThickness="1" CornerRadius="15">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </TabItem>
 
-                <TabItem Header="Registrarse"/>
-            </TabControl>
-        </Canvas>
-    </Grid>
+                    <TabItem Header="Registrarse">
+                        <StackPanel HorizontalAlignment="Left" >
+                            <DockPanel >
+                                <Label Width="70" Margin="5">Nombre</Label>
+                                <Label Width="70" Margin="5">Apellidos</Label>
+                            </DockPanel>
+                            <DockPanel>
+                                <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12" Width="70" Margin="5" />
+                                <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12"  Margin="5" Width="70"/>
+                            </DockPanel>
+
+                            <DockPanel >
+                                <Label >Fecha de nacimiento</Label>
+                                <Label >Comida Favorita</Label>
+                            </DockPanel>
+                            <DockPanel>
+                                <DatePicker Width="70"></DatePicker>
+                                <ComboBox Width="70">
+                                    <ComboBoxItem Content="Estofado"></ComboBoxItem>
+                                    <ComboBoxItem Content="Turron"></ComboBoxItem>
+                                    <ComboBoxItem Content="Arroz"></ComboBoxItem>
+                                    <ComboBoxItem Content="Fideua"></ComboBoxItem>
+                                    <ComboBoxItem Content="Fisn and chips"></ComboBoxItem>
+                                    <ComboBoxItem Content="Bocata lomo bacon queso"></ComboBoxItem>
+                                    <ComboBoxItem Content="Pollo"></ComboBoxItem>
+                                </ComboBox>
+                            </DockPanel>
+                            <DockPanel >
+                                <Label Width="70" Margin="5">Email</Label>
+                                <Label  Width="70" Margin="5">Contraseña</Label>
+                            </DockPanel>
+                            <DockPanel>
+                                <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12" Width="70" Margin="5" />
+                                <PasswordBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12"  Margin="5" PasswordChar="*"/>
+                            </DockPanel>
+
+                            <Label>Sexo</Label>
+
+                            <DockPanel>
+                                <RadioButton Content="Mujer" GroupName="Sexo"></RadioButton>
+                                <RadioButton Content="Hombre " GroupName="Sexo"></RadioButton>
+                                <RadioButton Content="Indeterminado" GroupName="Sexo"></RadioButton>
+                            </DockPanel>
+
+                            <Label>¿Desear recibir comunicaciones?</Label>
+                            <DockPanel>
+                                <CheckBox Content="Newsletters"></CheckBox>
+                                <CheckBox Content="Descuentos"></CheckBox>
+
+                            </DockPanel>
+                            <Button Content="Registro" Width="140" Height="35" Foreground="#FF4B3A">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="White" BorderThickness="1" CornerRadius="15">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+
+                    </TabItem>
+
+                </TabControl>
+            </Canvas>
+        </Grid>
+    </Border>
+
 </Window>

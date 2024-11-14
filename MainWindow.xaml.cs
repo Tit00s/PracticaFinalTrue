@@ -16,9 +16,28 @@ namespace PracticaFinalTrue
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Contra_Click(object sender, RoutedEventArgs e)
+        {
+            double Top = this.Top;
+            double Left = this.Left;
+            this.Hide();
+            RecContra recContra = new RecContra
+            {
+                Top = Top,
+                Left = Left,
+            };
+            recContra.Show();
+        }
+        public void Mostrar()
+        {
+            this.Show();
         }
     }
 }
