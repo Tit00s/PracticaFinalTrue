@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticaFinalTrue"
         mc:Ignorable="d"
-        Title="RecContra" Height="450" Width="800"
+        Title="RecContra" Height="720" Width="1280"
         Background="Transparent"
         WindowStyle="None"
         ResizeMode="NoResize">
@@ -14,37 +14,29 @@
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Consolas"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="11"></Setter>
-            <Setter Property="Margin" Value="5"></Setter>
-
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="10"/>
         </Style>
 
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Consolas"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="10"></Setter>
-            <Setter Property="Margin" Value="10"></Setter>
-
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="10"/>
         </Style>
 
         <Style TargetType="Button">
             <Setter Property="FontFamily" Value="Consolas"/>
-            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Height" Value="35"/>
         </Style>
-
-
-
-
-
-
-
     </Window.Resources>
 
     <Border CornerRadius="20" Background="#FF4B3A" Padding="10">
-
         <Grid Background="#FF4B3A">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -55,18 +47,17 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label FontSize="40" FontWeight="Bold" VerticalAlignment="Center" Margin="25,0,0,0">Bienvenidos</Label>
+            <Label FontSize="90" FontWeight="Bold" VerticalAlignment="Center" Margin="25,0,0,0">Bienvenidos</Label>
             <Image Source="Group 4.png" Grid.Row="1" HorizontalAlignment="Left"/>
 
+            <Canvas Grid.Column="1" VerticalAlignment="Center" Margin="0,100,0,0" Width="200">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="-72">
+                    <Label FontSize="25">Recuperar contraseña</Label>
+                    <Label>Email address</Label>
+                    <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="15" Width="240" Margin="10"/>
+                    <TextBlock TextAlignment="Center">Al hacer click en enviar, recibirás un <LineBreak/>email con los pasos a seguir</TextBlock>
 
-            <Canvas Grid.Column="1" VerticalAlignment="Center" Margin="120,0,0,50">
-                <StackPanel Width="200" Height="200">
-                    <Label FontSize="15">Recuperar contraseña</Label>
-                    <Label FontSize="10">Email addres</Label>
-                    <TextBox Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Foreground="White" FontSize="12"/>
-                    <TextBlock FontSize="9" >Al hacer click en enviar, recibiras un <LineBreak/> email con  los pasos a seguir</TextBlock>
-
-                    <Button x:Name="enviarBtn" Content="Enviar"  Height="35" Foreground="#FF4B3A" Click="enviarBtn_Click">
+                    <Button x:Name="enviarBtn" Content="Enviar" Foreground="#FF4B3A" Click="enviarBtn_Click">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="White" BorderThickness="1" CornerRadius="15">
@@ -76,12 +67,9 @@
                         </Button.Template>
                     </Button>
                 </StackPanel>
-
-            </Canvas>
-            <Canvas>
-                <Button Grid.Column="0" Background="Transparent" Width="50" Height="40"  Content="← Volver" Click="volverBtn_Click"  ></Button>
             </Canvas>
 
+            <Button Grid.Column="0" Background="Transparent" Width="100" Height="40" Margin="15,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="← Volver" Click="volverBtn_Click"/>
         </Grid>
     </Border>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticaFinalTrue"
         mc:Ignorable="d"
-        Title="MailEnviado" Height="100" Width="300"
+        Title="MailEnviado" Height="200" Width="400"
         WindowStyle="None"
         Background="Transparent"
         ResizeMode="NoResize">

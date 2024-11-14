@@ -34,8 +34,8 @@ namespace PracticaFinalTrue
                 double Left = this.Left;
                 MainWindow m = new MainWindow
                 {
-                    Top = Top,
-                    Left = Left,
+                    Owner = this,
+        
                 };
                 m.Show();  
             }));
@@ -44,12 +44,10 @@ namespace PracticaFinalTrue
         private void enviarBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            
-            MailEnviado m = new MailEnviado
-            {
-               Owner= this,
 
-            };
+            MailEnviado m = new MailEnviado();
+            m.Owner = this;
+            m.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             m.Show();
             
            

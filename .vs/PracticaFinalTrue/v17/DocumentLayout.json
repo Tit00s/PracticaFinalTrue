@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|c:\\users\\masca\\documents\\github\\practicafinaltrue\\reccontra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|solutionrelative:reccontra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|c:\\users\\masca\\documents\\github\\practicafinaltrue\\mailenviado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|solutionrelative:mailenviado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|c:\\users\\masca\\documents\\github\\practicafinaltrue\\reccontra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|solutionrelative:reccontra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|c:\\users\\masca\\documents\\github\\practicafinaltrue\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{35B9CBFA-BF2F-4484-842C-16886EAE76D1}|PracticaFinalTrue.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MailEnviado.xaml",
+              "DocumentMoniker": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\MailEnviado.xaml",
+              "RelativeDocumentMoniker": "MailEnviado.xaml",
+              "ToolTip": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\MailEnviado.xaml",
+              "RelativeToolTip": "MailEnviado.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-14T17:58:05.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecContra.xaml",
+              "DocumentMoniker": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\RecContra.xaml",
+              "RelativeDocumentMoniker": "RecContra.xaml",
+              "ToolTip": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\RecContra.xaml",
+              "RelativeToolTip": "RecContra.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-14T17:57:57.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecContra.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\RecContra.xaml.cs",
+              "RelativeDocumentMoniker": "RecContra.xaml.cs",
+              "ToolTip": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\RecContra.xaml.cs",
+              "RelativeToolTip": "RecContra.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwC8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:57:53.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\masca\\Documents\\GitHub\\PracticaFinalTrue\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-14T15:25:19.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
